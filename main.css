@@ -1,0 +1,76 @@
+/* Fit the canvas to the page width. */
+canvas {
+  display: block;
+}
+/*defining body fonts. */
+body {
+    font-family: monospace;
+}
+
+h1 {
+    font-family: helvetica;
+}
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: greenyellow;
+  text-align: center;
+}
+.paragraph1 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  color: greenyellow;
+}
+.dark-theme {
+    color: #ffffff;
+    background: #000000;
+  }
+  :root {
+    --white: #ffffff;
+    --black: #000000;
+  }
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+  
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+  }
+  * {
+    color: var(--fontColor);
+    font-family: helvetica;
+  }
+  
+body {
+      background: var(--bg);
+  }
+  .btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+  .btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+  .btn:focus { outline-style: none; }
+.aligncenter {
+    text-align: center;
+}
+.img {
+    width: fit-content;
+    height: fit-content;
+}
